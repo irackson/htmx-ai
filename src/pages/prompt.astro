@@ -1,0 +1,9 @@
+---
+const formData = await Astro.request.formData();
+const prompt = formData.get('prompt')?.toString();
+console.log({ prompt });
+---
+
+<div class="italic">
+  <span>{prompt}</span>
+</div>
